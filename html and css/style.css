@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("man.jpeg");
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    color:orange;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.menu ul{
+    display:flex;
+    list-style:none;
+}
+
+.menu ul li{
+    margin:0 20px;
+}
+
+.menu ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.menu ul li a:hover{
+    color:orange;
+}
+
+.search{
+    display:flex;
+}
+
+.search input{
+    padding:10px;
+    border:1px solid orange;
+    background:transparent;
+    color:white;
+}
+
+.search button{
+    background:orange;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:70px;
+}
+
+.content{
+    width:55%;
+    color:white;
+}
+
+.content h1{
+    font-size:60px;
+    line-height:1.2;
+}
+
+.content span{
+    color:orange;
+}
+
+.content p{
+    margin:20px 0;
+    line-height:1.7;
+}
+
+.join{
+    background:orange;
+    color:black;
+    border:none;
+    padding:12px 30px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.form{
+    width:320px;
+    background:black;
+    padding:30px;
+    border-radius:10px;
+}
+
+.form h2{
+    background:white;
+    color:orange;
+    text-align:center;
+    padding:10px;
+    border-radius:5px;
+}
+
+.form input{
+    width:100%;
+    margin-top:25px;
+    padding:10px;
+    background:transparent;
+    border:none;
+    border-bottom:2px solid orange;
+    color:white;
+}
+
+.login{
+    width:100%;
+    margin-top:30px;
+    padding:10px;
+    background:orange;
+    color:white;
+    border:none;
+    font-size:18px;
+}
+
+.form p{
+    color:white;
+    text-align:center;
+    margin-top:20px;
+}
+
+.form a{
+    color:orange;
+    text-decoration:none;
+}
+
+.icons{
+    margin-top:30px;
+    text-align:center;
+}
+
+.icons i{
+    color:white;
+    font-size:21px;
+    margin:0 10px;
+    cursor:pointer;
+}
+
+.icons i:hover{
+    color:white;
+}
+
+@media(max-width:768px){
+
+.container{
+    flex-direction:column;
+}
+
+.content{
+    width:100%;
+    text-align:center;
+}
+
+.content h1{
+    font-size:40px;
+}
+
+.form{
+    margin-top:40px;
+}
+
+.navbar{
+    flex-direction:column;
+}
+
+.menu ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.search{
+    margin-top:20px;
+}
+}
